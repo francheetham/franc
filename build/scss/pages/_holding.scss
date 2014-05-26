@@ -1,0 +1,48 @@
+#holding-page{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color:#1c1c1c;
+	text-align:center;
+
+	.home-franc{
+		width:447px;
+		height:297px;
+		position:absolute;
+		top:50%;
+		left: 50%;
+		margin-left: -213px;
+		margin-top: -225px;
+	}
+
+	.center {
+		position: absolute;
+		left: 50%;
+		top: 85%; 
+		@include transform(translate(-50%, -50%));
+		
+		
+	}
+
+	h1{
+		color:white;
+		//@extend %inline-block;
+		@extend %italicFont;
+		color: #10f71b;
+		position: relative;
+		top: 80%;
+		//text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 0.2em;
+
+		a, a:visited {
+			color: #10f71b;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}

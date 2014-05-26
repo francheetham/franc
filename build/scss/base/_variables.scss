@@ -1,0 +1,18 @@
+/* SETTINGS
+---------------------------------------------------------------------- */
+$generated_sprites_folder : 'generated/' !default; // default directory for generated sprites
+$sprites: sprite-map('sprites/*.png', $layout:smart) !default;  // default directory for images
+$sprites-retina: sprite-map('sprites-retina/*.png', $layout: smart) !default; // default directory for retina-images
+
+
+/* TEXT COLOURS
+---------------------------------------------------------------------- */
+$txt_color:#000;
+$txtAnchor_color:#000;
+
+
+/* BACKGROUND COLOURS
+---------------------------------------------------------------------- */
+
+/* Z-INDEX (List in order of top to bottom)
+---------------------------------------------------------------------- */
