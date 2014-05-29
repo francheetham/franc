@@ -3,10 +3,12 @@ define([
 	"view/pages/home",
     "view/pages/about",
     "view/pages/work",
+    "view/pages/play",
     "view/pages/holding",
     "model/pages/home",
     "model/pages/about",
     "model/pages/work",
+    "model/pages/play",
     "model/pages/holding",
 	"libs/createjs/preloadjs",
 	"console"
@@ -15,10 +17,12 @@ define([
 	HomeView,
     AboutView,
     WorkView,
+    PlayView,
     HoldingView,
     HomeModel,
     AboutModel,
     WorkModel,
+    PlayModel,
     HoldingModel,
 	preloadjs
 ){
@@ -43,6 +47,12 @@ define([
 				'VIEW':WorkView,
 				'MODEL':WorkModel,
 				'URL':"work"
+			},
+			'PLAY':{
+				'NAME': "PLAY",
+				'VIEW':PlayView,
+				'MODEL':PlayModel,
+				'URL':"play"
 			},
 			'HOLDING':{
 				'NAME': "HOLDING",

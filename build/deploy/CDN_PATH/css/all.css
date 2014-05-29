@@ -619,6 +619,13 @@ table {
   font-style: normal;
 }
 
+/* line 26, ../../../scss/base/_fonts.scss */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: ProximaNova-Semibold, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
   font-family: 'ProximaNovaA-Thin';
@@ -766,7 +773,7 @@ body {
 }
 
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-/* line 22, ../../../scss/base/_default.scss */
+/* line 23, ../../../scss/base/_default.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -775,7 +782,7 @@ body {
 
 /* BASIC STICKY FOOTER SETUP
 ---------------------------------------------------------------------- */
-/* line 29, ../../../scss/base/_default.scss */
+/* line 30, ../../../scss/base/_default.scss */
 .pageContainer {
   padding-bottom: 0;
   position: absolute;
@@ -785,18 +792,57 @@ body {
   right: 0;
 }
 
-/* line 37, ../../../scss/base/_default.scss */
+/* line 38, ../../../scss/base/_default.scss */
 .contentContainer {
   min-height: 100%;
   position: relative;
+}
+
+/* line 43, ../../../scss/base/_default.scss */
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /* ANCHORS & BUTTONS
 ---------------------------------------------------------------------- */
 /* HEADINGS
 ---------------------------------------------------------------------- */
+/* line 90, ../../../scss/base/_default.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  color: white;
+  color: #fff;
+  /* Fallback for older browsers */
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.27em;
+  line-height: 20px;
+  font-size: 0.688em;
+  text-align: center;
+}
+
 /* TEXT
 ---------------------------------------------------------------------- */
+/* line 108, ../../../scss/base/_default.scss */
+p {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  color: white;
+  color: #fff;
+  /* Fallback for older browsers */
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.27em;
+  line-height: 15px;
+  font-size: 0.688em;
+  text-align: center;
+}
+
 /* HORIZONTAL RULE
 ---------------------------------------------------------------------- */
 /* FORM ELEMENTS
@@ -831,10 +877,6 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 23, ../../../scss/pages/_home.scss */
-#home-page .center h1 {
-  color: #456456;
-}
 /* line 28, ../../../scss/pages/_home.scss */
 #home-page .bottom-links {
   position: absolute;
@@ -847,21 +889,42 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: #00f755;
 }
-/* line 6, ../../../scss/pages/_about.scss */
+/* line 7, ../../../scss/pages/_about.scss */
 #about-page .center {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 1024px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 12, ../../../scss/pages/_about.scss */
+/* line 14, ../../../scss/pages/_about.scss */
 #about-page .center h1 {
-  color: #456456;
+  color: #12c91b;
+  text-align: left;
+}
+/* line 20, ../../../scss/pages/_about.scss */
+#about-page .center p {
+  color: #021803;
+  text-align: left;
+}
+/* line 26, ../../../scss/pages/_about.scss */
+#about-page .center .col {
+  width: 450px;
+  float: left;
+  margin: 0 30px;
+}
+/* line 33, ../../../scss/pages/_about.scss */
+#about-page .center .col1 p {
+  letter-spacing: 0.27em;
+  line-height: 4.4;
+  font-size: 0.875em;
+  text-align: center;
 }
 
 /* line 1, ../../../scss/pages/_work.scss */

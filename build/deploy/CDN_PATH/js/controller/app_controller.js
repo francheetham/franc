@@ -25,10 +25,11 @@ define([
 
             //setup app routes
             Router.setRoutes([
-                ["", AppData.PAGES.HOLDING.NAME]/*,
+                /*,["", AppData.PAGES.HOME.NAME]*/
                 [AppData.PAGES.HOME.URL, AppData.PAGES.HOME.NAME],
                 [AppData.PAGES.ABOUT.URL, AppData.PAGES.ABOUT.NAME],
-                [AppData.PAGES.WORK.URL, AppData.PAGES.WORK.NAME]*/
+                [AppData.PAGES.WORK.URL, AppData.PAGES.WORK.NAME],
+                [AppData.PAGES.PLAY.URL, AppData.PAGES.PLAY.NAME]
             ]);
 
             Router.on("page", this.onRouterPage, this);
